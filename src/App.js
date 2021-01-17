@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import Users from "./components/Users/Users";
+import LeftPane from "./components/LeftPane/LeftPane";
+import "./App.css";
+import Header from "./components/Header/Header";
 function App() {
+  const [selected, setSelected] = useState([]);
+  const handleSelected = (data) => {
+    setSelected(data);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <LeftPane selectedUsers={selected} />
+      </div>
+      <div>
+        <Header />
+        <Users getSelected={handleSelected} />
+      </div>
     </div>
   );
 }

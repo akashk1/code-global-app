@@ -1,0 +1,60 @@
+.LeftPane {
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(248, 244, 244);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.iconWrap {
+  align-items: center;
+  margin-left: 75px;
+}
+
+.icon {
+  width: 250px;
+  height: 250px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.card {
+  width: 430px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #d7ddfa;
+  margin: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.imgContainer {
+  width: 60px;
+  display: inline-block;
+}
+
+.buttonContainer {
+  margin-left: 170px;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 100px;
+  background-color: rgb(96, 88, 211);
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(124, 124, 212);
+}

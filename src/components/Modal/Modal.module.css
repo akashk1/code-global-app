@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+
+  margin: 50px;
+}
+
+.Row1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350px;
+  margin: 500px;
+}
